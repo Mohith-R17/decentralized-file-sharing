@@ -1,0 +1,23 @@
+console.log("Current file count:", theCount.toString());
+const theCount = await fileStorage.getFileCount();
+const fileStorage = await FileStorage.attach(contractAddress);
+const contractAddress = ethers.getAddress("0x0DcD1Bf9A1b36cE34237eEaFeF220932846BCD82");
+console.log("Current file count:", theCount.toString());
+const theCount = await fileStorage.getFileCount();
+console.log("Current file count:", count.toString());
+const count = await fileStorage.getFileCount(); // You can use 'count' again
+console.log("Current file count:", currentCount.toString());
+const currentCount = await fileStorage.getFileCount();
+const fileStorage = await FileStorage.attach("0x0DcD1Bf9A1b36cE34237eEaFeF220932846BCD82");
+console.log("Current file count:", currentCount.toString());
+const currentCount = await fileStorage.getFileCount();
+console.log("File count:", count.toString());
+const count = await fileStorage.getFileCount();
+const fileStorage = await FileStorage.attach("0x0DcD1Bf9A1b36cE34237eEaFeF220932846BCD82");
+const FileStorage = await ethers.getContractFactory("FileStorage");
+console.log("File count:", count.toString());
+const count = await fileStorage.getFileCount();
+console.log(artifact.abi.find(item => item.name === "getFileCount"));
+const artifact = await hre.artifacts.readArtifact("FileStorage");
+console.log(artifact.abi.find(item => item.name === "getFileCount"));
+const artifact = await hre.artifacts.readArtifact("FileStorage");

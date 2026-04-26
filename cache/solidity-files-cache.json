@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\User\\Downloads\\decentralized-file-sharing\\contracts\\FileStorage.sol": {
+      "lastModificationDate": 1744525633284,
+      "contentHash": "c4325e2ecb891069b07b1406c3975053",
+      "sourceName": "contracts/FileStorage.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FileStorage"
+      ]
+    },
+    "C:\\Users\\User\\Downloads\\decentralized-file-sharing\\contracts\\FileSharing.sol": {
+      "lastModificationDate": 1744536120297,
+      "contentHash": "f0e28da79c382f797eb6388b94566e1c",
+      "sourceName": "contracts/FileSharing.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FileSharing"
+      ]
+    }
+  }
+}
