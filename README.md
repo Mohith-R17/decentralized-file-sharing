@@ -1,81 +1,108 @@
-# 🔗 Decentralized File Sharing DApp
+<div align="center">
+
+# decentralized-file-sharing
+
+> A decentralized file sharing application built with blockchain and IPFS.
+
+![Language](https://img.shields.io/badge/JavaScript-blue?style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/Mohith-R17/decentralized-file-sharing?style=for-the-badge)
+
+</div>
 
 ---
 
-## 📌 Overview
-
-Built a decentralized file sharing application that allows users to securely upload, store, and manage files using blockchain and IPFS.
-
-The system uses a smart contract to store file metadata on-chain while actual files are stored on IPFS, ensuring decentralization and data integrity.
-
----
-
-## 💡 Features
-
-- 🔐 Connect wallet (MetaMask)
-- 📤 Upload files to IPFS (Pinata)
-- 📁 Store file references on blockchain
-- 📂 View uploaded files
-- ❌ Delete files from contract storage
-- 🔗 Decentralized architecture
+## 📋 Table of Contents
+- [Overview](#-overview)
+- [Features](#-features)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#️-tech-stack)
+- [Contributing](#-contributing)
 
 ---
 
-## ⚙️ Tech Stack
+## 🎯 Overview
+The decentralized-file-sharing application is a powerful tool for securely uploading, storing, and managing files using blockchain and IPFS. This application utilizes a smart contract to store file metadata on-chain, while actual files are stored on IPFS, ensuring decentralization and data integrity. The system is designed for users who require a secure and decentralized file sharing solution.
 
-### Frontend
-- React.js
-- Ethers.js
+The application is built using React.js, Ethers.js, and Solidity, with Hardhat used for development and deployment. The system uses Pinata API for file uploads to IPFS. The smart contract stores file metadata, including the file name and IPFS hash, allowing users to view and manage their uploaded files.
 
-### Blockchain
-- Solidity (Smart Contract)
-- Hardhat (Development & deployment)
+The decentralized-file-sharing application provides a secure and decentralized solution for file sharing, ensuring that files are stored and managed in a secure and transparent manner.
 
-### Storage
-- IPFS (via Pinata)
+## ✨ Features
+- 🔐 **Wallet Connection** — Connect to the application using MetaMask
+- 📤 **File Upload** — Upload files to IPFS using Pinata API
+- 📁 **File Storage** — Store file references on blockchain
+- 📂 **File Management** — View and manage uploaded files
+- ❌ **File Deletion** — Delete files from contract storage
+- 🔗 **Decentralized Architecture** — Built using blockchain and IPFS
 
----
+## 🚀 Getting Started
 
-## 🏗️ Architecture
+### Prerequisites
+* Node.js
+* npm
+* Hardhat
+* MetaMask
 
-User → React App → MetaMask  
-             ↓  
-        Smart Contract (Ethereum)  
-             ↓  
-            IPFS (File Storage)
-
----
-
-## 🧠 Key Implementation
-
-- Smart contract to store file metadata (name + IPFS hash)
-- Wallet integration using Ethers.js
-- File uploads using Pinata API
-- Dynamic UI to fetch and display user files
-- Interaction with blockchain using signer-based transactions
-
----
-
-## 🚧 Current Status
-
-- Running locally with Hardhat
-- Planned deployment on Ethereum testnet (Sepolia)
-
----
-
-## 🚀 Future Improvements
-
-- Access control for shared files
-- File sharing between users
-- Better UI/UX for file management
-- Secure API key handling using backend
-
----
-
-## ▶️ Run Locally
-
+### Installation
 ```bash
-git clone https://github.com/bestorbust/decentralized-file-sharing
-cd decentralized-file-sharing
+git clone https://github.com/Mohith-R17/decentralized-file-sharing
 npm install
-npm start
+```
+
+### Quick Start
+```bash
+npx hardhat run scripts/deploy.js
+```
+
+## 📖 Usage
+1. Connect to the application using MetaMask.
+2. Upload a file to IPFS using the Pinata API.
+3. View and manage your uploaded files.
+
+## 📁 Project Structure
+```
+decentralized-file-sharing/
+├── frontend
+│   ├── src
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.js
+│   │   ├── reportWebVitals.js
+│   │   ├── setupTests.js
+│   │   └── components
+│   │       └── FileList.js
+├── hardhat.config.js
+├── scripts
+│   └── deploy.js
+├── package.json
+└── README.md
+```
+
+## 🛠️ Tech Stack
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| JavaScript | - | Programming language |
+| React.js | - | Frontend framework |
+| Ethers.js | - | Blockchain interaction |
+| Solidity | 0.8.20 | Smart contract development |
+| Hardhat | 2.23.0 | Development and deployment |
+| IPFS | - | Decentralized file storage |
+| Pinata | - | IPFS file upload API |
+
+## ⚙️ Configuration
+No environment variables are required for this application.
+
+## 🤝 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+<div align="center">
+*Documentation auto-generated by [LiveDocAI](https://github.com) — Production-Aware API Intelligence*
+</div>
