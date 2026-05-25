@@ -27,72 +27,78 @@ The decentralized-file-sharing application is a powerful tool for securely uploa
 
 The application is built using React.js, Ethers.js, and Solidity, with Hardhat used for development and deployment. The system uses Pinata API for file uploads to IPFS. The smart contract stores file metadata, including the file name and IPFS hash, allowing users to view and manage their uploaded files.
 
-The decentralized-file-sharing application provides a secure and decentralized solution for file sharing, ensuring that files are stored and managed in a secure and transparent manner.
+The decentralized-file-sharing application provides a secure and decentralized solution for file sharing, ensuring that files are stored and managed in a secure and transparent manner. It solves the problem of centralized file sharing systems, which can be vulnerable to data breaches and censorship.
 
 ## ✨ Features
-- 🔐 **Wallet Connection** — Connect to the application using MetaMask
-- 📤 **File Upload** — Upload files to IPFS using Pinata API
-- 📁 **File Storage** — Store file references on blockchain
-- 📂 **File Management** — View and manage uploaded files
-- ❌ **File Deletion** — Delete files from contract storage
-- 🔗 **Decentralized Architecture** — Built using blockchain and IPFS
+- 🔐 **Secure File Uploads** — Upload files securely to IPFS using the Pinata API.
+- 📝 **File Metadata Management** — Store file metadata, including file name and IPFS hash, on-chain using a smart contract.
+- 📁 **Decentralized File Storage** — Store files on IPFS, ensuring decentralization and data integrity.
+- 🔒 **Access Control** — Manage access to uploaded files using the smart contract.
+- 📊 **File Listing** — View and manage uploaded files using the application's file listing feature.
+- 🚮 **File Deletion** — Delete uploaded files using the application's file deletion feature.
+- 📈 **Decentralized Data Management** — Ensure data integrity and transparency using blockchain and IPFS.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-* Node.js
-* npm
-* Hardhat
-* MetaMask
+* Node.js (version 14 or higher)
+* npm (version 6 or higher)
+* Hardhat (version 2.23.0 or higher)
+* Ethers.js (version 6.13.5 or higher)
+* React.js (version 18 or higher)
 
 ### Installation
 ```bash
-git clone https://github.com/Mohith-R17/decentralized-file-sharing
 npm install
+npm install @nomicfoundation/hardhat-toolbox
+npm install ethers
+npm install react
 ```
 
 ### Quick Start
 ```bash
 npx hardhat run scripts/deploy.js
+npm start
 ```
 
 ## 📖 Usage
-1. Connect to the application using MetaMask.
+1. Connect to the application using a wallet (e.g. MetaMask).
 2. Upload a file to IPFS using the Pinata API.
-3. View and manage your uploaded files.
+3. View and manage uploaded files using the application's file listing feature.
+4. Delete uploaded files using the application's file deletion feature.
 
 ## 📁 Project Structure
 ```
 decentralized-file-sharing/
-├── frontend
-│   ├── src
-│   │   ├── App.js
-│   │   ├── App.test.js
-│   │   ├── index.js
-│   │   ├── reportWebVitals.js
-│   │   ├── setupTests.js
-│   │   └── components
-│   │       └── FileList.js
-├── hardhat.config.js
-├── scripts
-│   └── deploy.js
-├── package.json
-└── README.md
+|---- frontend/
+|       |---- src/
+|       |       |---- App.js
+|       |       |---- App.test.js
+|       |       |---- index.js
+|       |       |---- reportWebVitals.js
+|       |       |---- setupTests.js
+|       |       |---- components/
+|       |       |       |---- FileList.js
+|---- hardhat.config.js
+|---- scripts/
+|       |---- deploy.js
+|---- package.json
 ```
 
 ## 🛠️ Tech Stack
 | Technology | Version | Purpose |
 |-----------|---------|---------|
 | JavaScript | - | Programming language |
-| React.js | - | Frontend framework |
-| Ethers.js | - | Blockchain interaction |
-| Solidity | 0.8.20 | Smart contract development |
-| Hardhat | 2.23.0 | Development and deployment |
+| React.js | 18 | Frontend framework |
+| Ethers.js | 6.13.5 | Blockchain interaction library |
+| Hardhat | 2.23.0 | Development and deployment tool |
 | IPFS | - | Decentralized file storage |
-| Pinata | - | IPFS file upload API |
+| Pinata API | - | File upload API |
+| Solidity | 0.8.20 | Smart contract programming language |
 
 ## ⚙️ Configuration
-No environment variables are required for this application.
+* Pinata API key: `bb841395fcae9adfb693`
+* Pinata API secret key: `869313d137ee940b01bcffb8f1c7971f0cd456ab256165125c0381d2e66875cb`
 
 ## 🤝 Contributing
 1. Fork the repository
